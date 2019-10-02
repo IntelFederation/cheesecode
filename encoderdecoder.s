@@ -1,4 +1,4 @@
-                           .data:00000000 40                               inc    eax
+                           .data:00000000 40                               inc    eax         ; tweaking some things
                            .data:00000001 65 63 68 6f                      arpl   WORD PTR gs:[eax+0x6f],bp
                            .data:00000005 20 6f 66                         and    BYTE PTR [edi+0x66],ch
                            .data:00000008 66 a6                            data16 cmps BYTE PTR ds:[esi],BYTE PTR es:[edi]

@@ -1476,13 +1476,11 @@
                            .data:00000bfe 96                               xchg   esi,eax
                            .data:00000bff 62 02                            bound  eax,QWORD PTR [edx]
                            .data:00000c01 56                               push   esi
-                           .data:00000c02 d6                               (bad)  
                            .data:00000c03 56                               push   esi
                            .data:00000c04 e7 52                            out    0x52,eax
                            .data:00000c06 53                               push   ebx
                            .data:00000c07 d3 d7                            rcl    edi,cl
                            .data:00000c09 16                               push   ss
-                           .data:00000c0a c7                               (bad)  
                            .data:00000c0b 12 06                            adc    al,BYTE PTR [esi]
                            .data:00000c0d 76 f7                            jbe    0x00000c06
                            .data:00000c0f 46                               inc    esi
@@ -1497,7 +1495,6 @@
                            .data:00000c29 96                               xchg   esi,eax
                            .data:00000c2a 62 02                            bound  eax,QWORD PTR [edx]
                            .data:00000c2c 56                               push   esi
-                           .data:00000c2d d6                               (bad)  
                            .data:00000c2e 56                               push   esi
                            .data:00000c2f e7 52                            out    0x52,eax
                            .data:00000c31 53                               push   ebx
@@ -1539,7 +1536,6 @@
                            .data:00000c79 3a 3a                            cmp    bh,BYTE PTR [edx]
                            .data:00000c7b 3a 3a                            cmp    bh,BYTE PTR [edx]
                            .data:00000c7d 3a a6 96 62 02 56                cmp    ah,BYTE PTR [esi+0x56026296]
-                           .data:00000c83 d6                               (bad)  
                            .data:00000c84 56                               push   esi
                            .data:00000c85 e7 52                            out    0x52,eax
                            .data:00000c87 53                               push   ebx
@@ -1559,7 +1555,6 @@
                            .data:00000caa 96                               xchg   esi,eax
                            .data:00000cab 62 02                            bound  eax,QWORD PTR [edx]
                            .data:00000cad 56                               push   esi
-                           .data:00000cae d6                               (bad)  
                            .data:00000caf 56                               push   esi
                            .data:00000cb0 e7 52                            out    0x52,eax
                            .data:00000cb2 53                               push   ebx
@@ -1594,7 +1589,6 @@
                            .data:00000cf7 69 20 67 6f 74 6f                imul   esp,DWORD PTR [eax],0x6f746f67
                            .data:00000cfd 20 35 a6 96 62 02                and    BYTE PTR ds:0x26296a6,dh
                            .data:00000d03 56                               push   esi
-                           .data:00000d04 d6                               (bad)  
                            .data:00000d05 56                               push   esi
                            .data:00000d06 e7 52                            out    0x52,eax
                            .data:00000d08 53                               push   ebx
@@ -1614,13 +1608,11 @@
                            .data:00000d2b 96                               xchg   esi,eax
                            .data:00000d2c 62 02                            bound  eax,QWORD PTR [edx]
                            .data:00000d2e 56                               push   esi
-                           .data:00000d2f d6                               (bad)  
                            .data:00000d30 56                               push   esi
                            .data:00000d31 e7 52                            out    0x52,eax
                            .data:00000d33 53                               push   ebx
                            .data:00000d34 d3 d6                            rcl    esi,cl
                            .data:00000d36 87 36                            xchg   DWORD PTR [esi],esi
-                           .data:00000d38 82                               (bad)  
                            .data:00000d39 06                               push   es
                            .data:00000d3a 76 f7                            jbe    0x00000d33
                            .data:00000d3c 46                               inc    esi
@@ -1643,7 +1635,6 @@
                            .data:00000d7b 74 6f                            je     0x00000dec
                            .data:00000d7d 20 6d 61                         and    BYTE PTR [ebp+0x61],ch
                            .data:00000d80 69 6e a6 96 62 02 56             imul   ebp,DWORD PTR [esi-0x5a],0x56026296
-                           .data:00000d87 d6                               (bad)  
                            .data:00000d88 56                               push   esi
                            .data:00000d89 e7 52                            out    0x52,eax
                            .data:00000d8b 53                               push   ebx
@@ -1672,7 +1663,6 @@
                            .data:00000dc4 a3 a3 a3 a3 a3                   mov    ds:0xa3a3a3a3,eax
                            .data:00000dc9 a3 a3 a3 a3 a3                   mov    ds:0xa3a3a3a3,eax
                            .data:00000dce a5                               movs   DWORD PTR es:[edi],DWORD PTR ds:[esi]
-                           .data:00000dcf c5 ca a3                         (bad)  
                            .data:00000dd2 a3 a3 a3 a3 a3                   mov    ds:0xa3a3a3a3,eax
                            .data:00000dd7 a3 a3 a3 a3 a3                   mov    ds:0xa3a3a3a3,eax
                            .data:00000ddc a3 a3 a3 a3 a3                   mov    ds:0xa3a3a3a3,eax
@@ -1706,7 +1696,6 @@
                            .data:00000e1c 67 61                            addr16 popa 
                            .data:00000e1e 69 6e a7 06 96 e6 72             imul   ebp,DWORD PTR [esi-0x59],0x72e69606
                            .data:00000e25 06                               push   es
-                           .data:00000e26 c6                               (bad)  
                            .data:00000e27 f6 36                            div    BYTE PTR [esi]
                            .data:00000e29 16                               push   ss
                            .data:00000e2a c6 86 f7 37 42 02 d6             mov    BYTE PTR [esi+0x24237f7],0xd6
@@ -2538,7 +2527,6 @@
                            .data:00001600 56                               push   esi
                            .data:00001601 36 86 f2                         ss xchg dl,dh
                            .data:00001604 e2 03                            loop   0x00001609
-                           .data:00001606 82                               (bad)  
                            .data:00001607 0a 67 6f                         or     ah,BYTE PTR [edi+0x6f]
                            .data:0000160a 74 6f                            je     0x0000167b
                            .data:0000160c 20 62 61                         and    BYTE PTR [edx+0x61],ah
@@ -2629,7 +2617,6 @@
                            .data:00001709 46                               inc    esi
                            .data:0000170a 97                               xchg   edi,eax
                            .data:0000170b 46                               inc    esi
-                           .data:0000170c c6                               (bad)  
                            .data:0000170d 52                               push   edx
                            .data:0000170e 04 56                            add    al,0x56
                            .data:00001710 e6 36                            out    0x36,al
@@ -2837,12 +2824,10 @@
                            .data:0000185d f3 23 22                         repz and esp,DWORD PTR [edx]
                            .data:00001860 f2 f2 d2 d2                      repnz repnz rcl dl,cl
                            .data:00001864 d2 d2                            rcl    dl,cl
-                           .data:00001866 d2                               (bad)  
                            .data:00001867 f2 02 f2                         repnz add dh,dl
                            .data:0000186a f2 d2 d2                         repnz rcl dl,cl
                            .data:0000186d d2 d2                            rcl    dl,cl
                            .data:0000186f d2 d2                            rcl    dl,cl
-                           .data:00001871 d2                               (bad)  
                            .data:00001872 f2 02 f2                         repnz add dh,dl
                            .data:00001875 f2 d2 d2                         repnz rcl dl,cl
                            .data:00001878 d2 d2                            rcl    dl,cl
@@ -2903,7 +2888,6 @@
                            .data:000018ec d2 d2                            rcl    dl,cl
                            .data:000018ee d2 d2                            rcl    dl,cl
                            .data:000018f0 d2 d5                            rcl    ch,cl
-                           .data:000018f2 c5 ca 65                         (bad)  
                            .data:000018f5 63 68 6f                         arpl   WORD PTR [eax+0x6f],bp
                            .data:000018f8 20 5f 5f                         and    BYTE PTR [edi+0x5f],bl
                            .data:000018fb 5f                               pop    edi
@@ -2985,7 +2969,6 @@
                            .data:000019c3 96                               xchg   esi,eax
                            .data:000019c4 62 02                            bound  eax,QWORD PTR [edx]
                            .data:000019c6 56                               push   esi
-                           .data:000019c7 d6                               (bad)  
                            .data:000019c8 56                               push   esi
                            .data:000019c9 e7 52                            out    0x52,eax
                            .data:000019cb 53                               push   ebx
@@ -3004,12 +2987,10 @@
                            .data:000019ee 96                               xchg   esi,eax
                            .data:000019ef 62 02                            bound  eax,QWORD PTR [edx]
                            .data:000019f1 56                               push   esi
-                           .data:000019f2 d6                               (bad)  
                            .data:000019f3 56                               push   esi
                            .data:000019f4 e7 52                            out    0x52,eax
                            .data:000019f6 53                               push   ebx
                            .data:000019f7 d3 d6                            rcl    esi,cl
-                           .data:000019f9 82                               (bad)  
                            .data:000019fa 06                               push   es
                            .data:000019fb 76 f7                            jbe    0x000019f4
                            .data:000019fd 46                               inc    esi
@@ -3025,7 +3006,6 @@
                            .data:00001a18 96                               xchg   esi,eax
                            .data:00001a19 62 02                            bound  eax,QWORD PTR [edx]
                            .data:00001a1b 56                               push   esi
-                           .data:00001a1c d6                               (bad)  
                            .data:00001a1d 56                               push   esi
                            .data:00001a1e e7 52                            out    0x52,eax
                            .data:00001a20 53                               push   ebx
@@ -3043,7 +3023,6 @@
                            .data:00001a41 96                               xchg   esi,eax
                            .data:00001a42 62 02                            bound  eax,QWORD PTR [edx]
                            .data:00001a44 56                               push   esi
-                           .data:00001a45 d6                               (bad)  
                            .data:00001a46 56                               push   esi
                            .data:00001a47 e7 52                            out    0x52,eax
                            .data:00001a49 53                               push   ebx
@@ -3059,7 +3038,6 @@
                            .data:00001a6a 96                               xchg   esi,eax
                            .data:00001a6b 62 02                            bound  eax,QWORD PTR [edx]
                            .data:00001a6d 56                               push   esi
-                           .data:00001a6e d6                               (bad)  
                            .data:00001a6f 56                               push   esi
                            .data:00001a70 e7 52                            out    0x52,eax
                            .data:00001a72 53                               push   ebx
@@ -3079,7 +3057,6 @@
                            .data:00001a93 96                               xchg   esi,eax
                            .data:00001a94 62 02                            bound  eax,QWORD PTR [edx]
                            .data:00001a96 56                               push   esi
-                           .data:00001a97 d6                               (bad)  
                            .data:00001a98 56                               push   esi
                            .data:00001a99 e7 52                            out    0x52,eax
                            .data:00001a9b 53                               push   ebx
@@ -3099,7 +3076,6 @@
                            .data:00001abc 96                               xchg   esi,eax
                            .data:00001abd 62 02                            bound  eax,QWORD PTR [edx]
                            .data:00001abf 56                               push   esi
-                           .data:00001ac0 d6                               (bad)  
                            .data:00001ac1 56                               push   esi
                            .data:00001ac2 e7 52                            out    0x52,eax
                            .data:00001ac4 53                               push   ebx
@@ -3119,7 +3095,6 @@
                            .data:00001ae6 96                               xchg   esi,eax
                            .data:00001ae7 62 02                            bound  eax,QWORD PTR [edx]
                            .data:00001ae9 56                               push   esi
-                           .data:00001aea d6                               (bad)  
                            .data:00001aeb 56                               push   esi
                            .data:00001aec e7 52                            out    0x52,eax
                            .data:00001aee 53                               push   ebx
@@ -3137,7 +3112,6 @@
                            .data:00001b0a 74 6f                            je     0x00001b7b
                            .data:00001b0c 20 61 64                         and    BYTE PTR [ecx+0x64],ah
                            .data:00001b0f 20 a6 96 62 02 56                and    BYTE PTR [esi+0x56026296],ah
-                           .data:00001b15 d6                               (bad)  
                            .data:00001b16 56                               push   esi
                            .data:00001b17 e7 52                            out    0x52,eax
                            .data:00001b19 53                               push   ebx
@@ -3157,12 +3131,10 @@
                            .data:00001b3b 96                               xchg   esi,eax
                            .data:00001b3c 62 02                            bound  eax,QWORD PTR [edx]
                            .data:00001b3e 56                               push   esi
-                           .data:00001b3f d6                               (bad)  
                            .data:00001b40 56                               push   esi
                            .data:00001b41 e7 52                            out    0x52,eax
                            .data:00001b43 53                               push   ebx
-                           .data:00001b44 d3 d7                            rcl    edi,cl
-                           .data:00001b46 82                               (bad)  
+                           .data:00001b44 d3 d7                            rcl    edi,cl 
                            .data:00001b47 06                               push   es
                            .data:00001b48 76 f7                            jbe    0x00001b41
                            .data:00001b4a 46                               inc    esi
@@ -3199,7 +3171,6 @@
                            .data:00001b8e 96                               xchg   esi,eax
                            .data:00001b8f 62 02                            bound  eax,QWORD PTR [edx]
                            .data:00001b91 56                               push   esi
-                           .data:00001b92 d6                               (bad)  
                            .data:00001b93 56                               push   esi
                            .data:00001b94 e7 52                            out    0x52,eax
                            .data:00001b96 53                               push   ebx
@@ -3238,7 +3209,6 @@
                            .data:00001be0 96                               xchg   esi,eax
                            .data:00001be1 62 02                            bound  eax,QWORD PTR [edx]
                            .data:00001be3 56                               push   esi
-                           .data:00001be4 d6                               (bad)  
                            .data:00001be5 56                               push   esi
                            .data:00001be6 e7 52                            out    0x52,eax
                            .data:00001be8 53                               push   ebx
